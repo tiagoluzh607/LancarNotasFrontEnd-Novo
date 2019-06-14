@@ -6,6 +6,10 @@
     background-color: #57b846;
 }
 
+.btn-danger{
+    background-color: #ea4848;
+}
+
 .btn-secondary{
     background-color: #4683b8;
 }
@@ -17,4 +21,17 @@
 .painel-principal{
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.conteudo-principal{
+    width: 100%
+}
+
+.btn-action{
+    max-width: 300px;
+}
+
+
+.btn-table{
+    margin-bottom: 40px;
 }
