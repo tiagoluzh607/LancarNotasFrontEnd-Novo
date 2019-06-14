@@ -17,3 +17,7 @@ $(document).ready(function() {
         ]
     } );
 } );
+
+$.get( "http://184.107.24.224:12301/api/alunos", function( alunos ) {
+    console.log(alunos);
+});
