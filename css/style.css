@@ -1,0 +1,20 @@
+.margin-auto{
+    margin: auto
+}
+
+.btn-primary{
+    background-color: #57b846;
+}
+
+.btn-secondary{
+    background-color: #4683b8;
+}
+
+.btn-tertiary{
+    background-color: #b452c3;
+}
+
+.painel-principal{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
