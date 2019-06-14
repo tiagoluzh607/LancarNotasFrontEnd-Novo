@@ -3,6 +3,16 @@ function goToAlunos(){
     //o replace ao voltar nao deixa a pagina atual no historico
 }
 
+function buscaAlunoDoForm(){
+    return {
+        nome: $('#inputAlunoNome').val(),
+        email: $('#inputAlunoEmail').val(),
+        rg: $('#inputAlunoRg').val(),
+        telefone: $('#inputAlunoTelefone').val(),
+        cpf: $('#inputAlunoCpf').val()
+    }
+}
+
 function adicionaAlunoApi(){
 
     $.ajaxSetup({
@@ -13,7 +23,7 @@ function adicionaAlunoApi(){
     });
 
 
-    let aluno = {nome: "Tiago Luz", rg: "12354263"};
+    let aluno = buscaAlunoDoForm();
     let alunoJsonString = JSON.stringify(aluno);
 
     $.post("http://184.107.24.224:12301/api/alunos", alunoJsonString, function(aluno){
