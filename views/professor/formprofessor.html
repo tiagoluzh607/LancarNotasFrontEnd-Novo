@@ -33,12 +33,12 @@
 
 				<div class="margin-auto conteudo-principal">
 					<span class="login100-form-title">
-						Form Aluno
+						Form Professor
                     </span>
 					
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input id="inputAlunoNome" 
-							required minlength=7 class="input100" type="text" name="inputAlunoNome" placeholder="Nome">
+						<input id="inputProfessorNome" 
+							required minlength=7 class="input100" type="text" name="inputProfessorNome" placeholder="Nome">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-user-circle" aria-hidden="true"></i>
@@ -46,8 +46,8 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input id="inputAlunoEmail" 
-							required minlength=7 class="input100" type="email" name="inputAlunoEmail" placeholder="Email">
+						<input id="inputProfessorEmail" 
+							required minlength=7 class="input100" type="email" name="inputProfessorEmail" placeholder="Email">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -55,8 +55,8 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input id="inputAlunoRg" 
-							required minlength=7 class="input100" type="number" name="inputAlunoRg" placeholder="Rg">
+						<input id="inputProfessorRg" 
+							required minlength=7 class="input100" type="number" name="inputProfessorRg" placeholder="Rg">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-address-card-o" aria-hidden="true"></i>
@@ -64,8 +64,8 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input id="inputAlunoTelefone" 
-							required minlength=7 class="input100" type="tel" name="inputAlunoTelefone" placeholder="Telefone">
+						<input id="inputProfessorTelefone" 
+							required minlength=7 class="input100" type="tel" name="inputProfessorTelefone" placeholder="Telefone">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-phone" aria-hidden="true"></i>
@@ -73,8 +73,23 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input id="inputAlunoCpf" 
-							required minlength=7 class="input100" type="text" name="inputAlunoCpf" placeholder="CPF">
+						<select id="inputProfessorSexo" 
+							required  class="input100"  name="inputProfessorSexo">
+							<option value="MASCULINO">Masculino</option>
+							<option value="FEMININO">Feminino</option>
+						</select>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-user-o" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<select id="inputProfessorEscolaridade" 
+							required  class="input100"  name="inputProfessorEscolaridade">
+							<option value="MESTRE">Mestre</option>
+							<option value="DOUTOR">Doutor</option>
+						</select>
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-user-o" aria-hidden="true"></i>
@@ -82,13 +97,13 @@
 					</div>
 					
                     <div class="container-login100-form-btn animated bounceInLeft">
-						<button onclick="adicionaAlunoApi()" class="login100-form-btn btn-action">
+						<button onclick="adicionaProfessorApi()" class="login100-form-btn btn-action">
 							Salvar
 						</button>
 					</div>
 					
 					<div class="container-login100-form-btn animated bounceInLeft">
-						<button onclick="goToAlunos()" class="login100-form-btn btn-danger btn-action">
+						<button onclick="goToProfessores()" class="login100-form-btn btn-danger btn-action">
 							Voltar a Lista de Alunos
 						</button>
                     </div>
@@ -124,6 +139,6 @@
 </body>
 
 	<script src="../../js/vendor/jquery-3.4.1.min.js"></script>
-    <script src="../../js/controller/formaluno-controller.js"></script>
+    <script src="../../js/controller/formprofessor-controller.js"></script>
 
 </html>
