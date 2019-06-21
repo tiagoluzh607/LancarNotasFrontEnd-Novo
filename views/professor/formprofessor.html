@@ -33,16 +33,67 @@
 
 				<div class="margin-auto conteudo-principal">
 					<span class="login100-form-title">
-						Professores
+						Form Aluno
                     </span>
-                    
+					
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input id="inputAlunoNome" 
+							required minlength=7 class="input100" type="text" name="inputAlunoNome" placeholder="Nome">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-user-circle" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input id="inputAlunoEmail" 
+							required minlength=7 class="input100" type="email" name="inputAlunoEmail" placeholder="Email">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input id="inputAlunoRg" 
+							required minlength=7 class="input100" type="number" name="inputAlunoRg" placeholder="Rg">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-address-card-o" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input id="inputAlunoTelefone" 
+							required minlength=7 class="input100" type="tel" name="inputAlunoTelefone" placeholder="Telefone">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input id="inputAlunoCpf" 
+							required minlength=7 class="input100" type="text" name="inputAlunoCpf" placeholder="CPF">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-user-o" aria-hidden="true"></i>
+						</span>
+					</div>
+					
                     <div class="container-login100-form-btn animated bounceInLeft">
-						<button onclick="goToFormProfessor()" class="login100-form-btn btn-action btn-table">
-							Adicionar
+						<button onclick="adicionaAlunoApi()" class="login100-form-btn btn-action">
+							Salvar
+						</button>
+					</div>
+					
+					<div class="container-login100-form-btn animated bounceInLeft">
+						<button onclick="goToAlunos()" class="login100-form-btn btn-danger btn-action">
+							Voltar a Lista de Alunos
 						</button>
                     </div>
 					
-					<table id="example" class="display" width="100%"></table>					
+										
 
 					
 				</div>
@@ -73,7 +124,6 @@
 </body>
 
 	<script src="../../js/vendor/jquery-3.4.1.min.js"></script>
-    <script src="../../js/controller/professores-controller.js"></script>
-    <script src="../../vendor/datatables/datatables.min.js"></script>
+    <script src="../../js/controller/formaluno-controller.js"></script>
 
 </html>
